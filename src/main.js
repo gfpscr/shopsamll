@@ -3,9 +3,7 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store'
 import Toast from './components/contents/toast/index'
-// import Fastclick from 'fastclick'
 import  VueLazyLoad from 'vue-lazyload'
-// import axios from 'axios'
 
 Vue.config.productionTip = false
 //添加事件总线对象
@@ -19,17 +17,10 @@ Vue.use(VueLazyLoad,{
 });
 
 
-//解决移动端300ms延迟
-// Fastclick.attach(document.body);
 new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
 
-// axios({
-//   url:'http://123.207.32.32:8000/api/hy/detail?iid=1jw0sr2'
-// }).then(res => 
-//   window.console.log(res)
-// )
 
